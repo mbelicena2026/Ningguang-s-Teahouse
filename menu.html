@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Prata', serif;
+        margin: 0px;
+    }
+
+    .dropdown {
+        color: #ffffff;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        color: #000000;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    ul {
+        margin-left: 80px;
+        font-size: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        width: 100%;
+        height: 120px;
+        background-color: rgb(29, 29, 29);
+        position: sticky;
+        top: 0;
+        text-align: center;
+    }
+
+    li {
+        margin-top: 20px;
+        float: left;
+        margin-left: 6.9%;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        opacity: 0.6;
+    }
+
+
+    img {
+        vertical-align: middle
+    }
+
+    a {
+        color: inherit;
+    }
+
+    header {
+        background-image: url(https://64.media.tumblr.com/9db7b0aed7abaf58cd15ce37b81cdaef/c88a471a1ff65de9-f9/s1280x1920/938c01bc7a2e7af9dfb508bef414c24d98fc3c3a.jpg);
+        height: 350px;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .box {
+        border-radius: 25px 25px 25px 25px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .menuarea {
+        background-color: rgba(255, 255, 255, 0);
+        margin: 100px;
+        padding: 50px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    }
+
+    #menu2 {
+        float: right;
+    }
+
+    .pagetitle {
+        font-size: 50pt;
+        color: white;
+        padding-top: 260px;
+        padding-left: 20px;
+        margin: 0px;
+        font-family: 'Aboreto', cursive;
+    }
+
+    .row-padding {
+        padding: 0 8px;
+    }
+
+    .section {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .size {
+        float: left;
+        width: 33.33333%;
+    }
+
+    .opacity,
+    .hover-opacity:hover {
+        opacity: 0.60;
+    }
+
+    .opacity-off,
+    .hover-opacity-off:hover {
+        opacity: 1;
+    }
+
+    .rectangle {
+        margin: auto;
+        border-radius: 25px;
+        width: 70%;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    }
+
+    h4 {
+        font-size: 60px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    h4:before,
+    h4:after {
+        background-color: #000;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 30%;
+    }
+
+    h4:before {
+        right: 0.5em;
+    }
+
+    h4:after {
+        left: 0.5em;
+    }
+
+    footer {
+        margin: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h6 {
+        text-align: center;
+        font-size: 40px;
+    }
+</style>
+
+<title> Ningguang's Teahouse | 寧光的茶館 </title>
+
+</head>
+
+<body>
+        <header>
+            <p class="pagetitle">Ningguang's Teahouse</p>
+        </header>
+    <ul>
+        <li style="margin-top: 35px;">
+            <div class="dropdown">
+                <span style="padding-left: 30px;">Menu</span>
+                <div class="dropdown-content">
+                    <a style="color:#000000" href="#menu">Our Variety</a>
+                    <a style="color:#000000" href="#preview">Preview</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="contact.html">Where to find us</a></li>
+        <li style="margin-top: 0px"><a href="index.html"><img src="ninglogo.png" alt="Ningguang's Teahouse Logo" width="100" height="100"></a></li>
+        <li><a href="info.html">Our Story</a></li>
+        <li><a href="reservation.html">Reservations</a></li>
+    </ul>
+
+    <section>
+        <h6>"I'd like to see your menu, please."</h6>
+    </section>
+
+    <div id="menu">
+        <div class="menuarea">
+            <img src="menu1.png" alt="Table Setting" width="790" height="1200">
+            <img src="menu2.png" id="menu2" alt="Table Setting" width="790" height="1200">
+        </div>
+    </div>
+
+    <section>
+        <h4> Quick Preview </h4>
+        <div class="rectangle">
+            <div class="size">
+                <img class="demo opacity hover-opacity-off"
+                    src="https://static.wikia.nocookie.net/gensin-impact/images/5/56/Item_Delicious_Tianshu_Meat.png/revision/latest?cb=20210415183752" alt="Tianshu Meat"
+                    style="width: 60%;cursor:pointer;padding-left:80px" onclick="currentDiv(1)">
+            </div>
+            <div class="size">
+                <img class="demo opacity hover-opacity-off"
+                    src="https://static.wikia.nocookie.net/gensin-impact/images/9/9d/Item_Bamboo_Shoot_Soup.png/revision/latest/scale-to-width/360?cb=20210417152640" alt="Bamboo Shoot Soup"
+                    style="width:60%;cursor:pointer;padding-left:80px" onclick="currentDiv(2)">
+            </div>
+            <div class="size">
+                <img class="demo opacity hover-opacity-off"
+                    src="https://static.wikia.nocookie.net/gensin-impact/images/9/90/Item_Berry_Mizu_Manjuu.png/revision/latest/scale-to-width/360?cb=20211014000649" alt="Berry Mizu Manjuu"
+                    style="width:60%;cursor:pointer;padding-left:80px" onclick="currentDiv(3)">
+            </div>
+            <div id="preview">
+                    <img class="mySlides" src="https://i.ytimg.com/vi/YGxhoOmeuOQ/maxresdefault.jpg" alt="Tianshu Meat, real sized"
+                        style="width:100%;display:none;border-radius: 0px 0px 25px 25px">
+                    <img class="mySlides" src="https://i.ytimg.com/vi/LjSVolBrk7g/maxresdefault.jpg"
+                        alt="Bamboo Shoot Soup, real sized" style="width:100%;display:block;border-radius: 0px 0px 25px 25px">
+                    <img class="mySlides" src="https://i.redd.it/gbrufndfu5b81.jpg" alt="Berry Mizu Manjuu, real sized"
+                        style="width:100%;display:none;border-radius: 0px 0px 25px 25px">
+            </div>
+        </div>
+    </section>
+
+    <footer> Copyright © 2022 Ningguang's Teahouse. All rights reserved.</footer>
+
+    <script>
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-opacity-off";
+        }
+    </script>
+
+</body>
+
+</html>

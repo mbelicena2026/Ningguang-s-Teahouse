@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Prata', serif;
+        margin: 0px;
+    }
+
+    .dropdown {
+        color: #ffffff;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        color: #000000;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+        .pagetitle {
+        font-size: 50pt;
+        color: white;
+        padding-top: 260px;
+        padding-left: 20px;
+        margin: 0px;
+        font-family: 'Aboreto', cursive;
+    }
+
+
+    ul {
+        margin-left: 80px;
+        font-size: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        width: 100%;
+        height: 120px;
+        background-color: rgb(29, 29, 29);
+        position: sticky;
+        top: 0;
+        text-align: center;
+    }
+
+    li {
+        margin-top: 20px;
+        float: left;
+        margin-left: 6.9%;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        opacity: 0.6;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    header {
+        background-image: url(https://64.media.tumblr.com/9db7b0aed7abaf58cd15ce37b81cdaef/c88a471a1ff65de9-f9/s1280x1920/938c01bc7a2e7af9dfb508bef414c24d98fc3c3a.jpg);
+        height: 350px;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .box {
+        float: left;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        height: 750px;
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .row-padding {
+        padding: 0 8px;
+    }
+
+    .opacity,
+    .hover-opacity:hover {
+        opacity: 0.60;
+    }
+
+    .opacity-off,
+    .hover-opacity-off:hover {
+        opacity: 1;
+    }
+
+    .mainbox {
+        font-size: 30px;
+        height: 1000px;
+        padding: 10px;
+        padding-right: 0;
+        padding-top: 0;
+        margin: auto;
+        margin-right: 0;
+        border-radius: 25px;
+        width: 99%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    footer {
+        margin: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    video{
+        display: block;
+    }
+
+    h6 {
+        text-align: center;
+        font-size: 40px;
+    }
+</style>
+<title> Ningguang's Teahouse | 寧光的茶館 </title>
+
+</head>
+
+<body>
+    <header>
+        <p class="pagetitle">Ningguang's Teahouse</p>
+    </header>
+
+    <ul>
+        <li style="margin-top: 35px;">
+            <div class="dropdown">
+                <span style="padding-left: 30px;">Menu</span>
+                <div class="dropdown-content">
+                    <a style="color:#000000" href="menu.html">Our Variety</a>
+                    <a style="color:#000000" href="menu.html">Preview</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="contact.html">Where to find us</a></li>
+        <li style="margin-top: 0px"><a href="index.html"><img src="ninglogo.png" alt="Ningguang's Teahouse Logo"
+                    width="100" height="100"></a></li>
+        <li><a href="info.html">Our Story</a></li>
+        <li><a href="reservation.html">Reservations</a></li>
+    </ul>
+
+    
+
+    <div class="mainbox">
+            <video src="finalrestovid.mp4" controls loop height="900" width="900" style="float:right"></video>
+            <div class="box">
+            <h1>Please insert the information asked.</h1>
+            <h2>(Due to the pandemic, we are only accepting a limited number of guests.)</h2>
+            <label for="fakeid1">Contact Number:</label>
+            <input id="fakeid1">
+            <br>
+            <label for="fakeid6">Email:</label>
+            <input id="fakeid6">
+
+            <label for="fakeid5">Number of guests:</label>
+
+            <input type="number" id="fakeid5" name="num" min="1" max="10">
+
+            <fieldset>
+                <legend>Room to be reserved:</legend>
+    
+                <div>
+                    <input type="radio" id="fakeid3" name="drone" value="Room 1">
+                    <label for="fakeid3">Room 1</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="fakeid4" name="drone" value="Room 2">
+                    <label for="fakeid4">Room 2</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="fakeid3" name="drone" value="Room 3">
+                    <label for="fakeid3">Room 3</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="fakeid4" name="drone" value="Room 4">
+                    <label for="fakeid4">Room 4</label>
+                  </div>
+            </fieldset>
+
+            <p>We will be emailing you if the reservation is accepted. Please understand that we cannot accomodate everyone.</p>
+            <input class="favorite styled" type="button" value="Place order" style="font-size:30px">
+        </div>
+    </div>
+
+    <footer> Copyright © 2022 Ningguang's Teahouse. All rights reserved.</footer>
+</body>
+
+</html>
